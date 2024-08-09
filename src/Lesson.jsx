@@ -21,7 +21,7 @@ function Lesson() {
                     <button>Next</button>
                 </div>
             </div>
-            
+
             <div className='lesson_info'>
                 <div>
                     <p>This is the info section</p>
