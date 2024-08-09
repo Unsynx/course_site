@@ -6,7 +6,7 @@
 
     position: sticky;
 
-    background-color: wheat;
+    background-color: black;
 }
 
 .header > nav {
@@ -19,4 +19,8 @@
     margin-bottom: 1em;
 
     padding: 1em;
+}
+
+.logo {
+    margin: 0.5em;
 }

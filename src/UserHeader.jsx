@@ -5,7 +5,7 @@ function UserHeader() {
   return (
     <>
     <div className='header'>
-      <p>Bowdoin Maker Space</p>
+      <img src='src\assets\Logo.svg' className='logo'/>
       <nav>
         <button><Link to="/course">Course</Link></button>
         <button><Link to="/">Home</Link></button>

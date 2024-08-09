@@ -2,7 +2,7 @@ import './css/Lesson.css'
 import './css/App.css'
 import Entry from './Entry'
 
-function Lesson() {
+function Lesson({ lessonName }) {
   return (
     <>
         <div className='video'>
@@ -14,7 +14,7 @@ function Lesson() {
         <div className='content'>
             <div className='big_row'>
                 <div className='lesson_name'> 
-                    <h1>Title</h1>
+                    <h1>{lessonName}</h1>
                 </div>
                 <div className='lesson_buttons'>
                     <button>Previous</button>
