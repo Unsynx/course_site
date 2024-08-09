@@ -5,7 +5,6 @@ import UserHeader from './UserHeader'
 function Home() {
   return (
     <>
-      <UserHeader></UserHeader>
       <Hero></Hero>
       <div className='content'>
         

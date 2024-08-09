@@ -6,7 +6,6 @@ import UserHeader from './UserHeader'
 function Course() {
   return (
     <>
-      <UserHeader></UserHeader>
       <Hero></Hero>
       <div className='content'>
         <CourseSection></CourseSection>

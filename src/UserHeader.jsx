@@ -1,4 +1,5 @@
 import './UserHeader.css'
+import { Link } from 'react-router-dom'
 
 function UserHeader() {
   return (
@@ -6,8 +7,9 @@ function UserHeader() {
     <div className='header'>
       <p>Bowdoin Maker Space</p>
       <nav>
-        <button>New Account</button>
-        <button>Login</button>
+        <button><Link to="/course">Course</Link></button>
+        <button><Link to="/">Home</Link></button>
+        <button><Link to="/lesson">lesson</Link></button>
       </nav>
     </div>
     </>

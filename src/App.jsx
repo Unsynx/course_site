@@ -2,28 +2,20 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import Home from './Home'
 import Course from './Course'
+import UserHeader from './UserHeader'
+import Lesson from './Lesson'
 
 function App() {
   return (
     <>
       <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/course">Course</Link>
-              </li>
-            </ul>
-        </nav>
+        <UserHeader />
 
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path='/course' element={<Course />}></Route>
+            <Route path='/lesson' element={<Lesson />}></Route>
           </Routes>
-        </div>
       </Router>
     </>
   )

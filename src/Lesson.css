@@ -1,0 +1,16 @@
+.video > iframe {
+    max-width: 100vw;
+    max-height: 56.25vw;
+}
+
+.big_row {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rebeccapurple;
+}
+
+.lesson_info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
