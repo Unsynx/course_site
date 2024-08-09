@@ -1,5 +1,5 @@
-import './Lesson.css'
-import './App.css'
+import './css/Lesson.css'
+import './css/App.css'
 import Entry from './Entry'
 
 function Lesson() {

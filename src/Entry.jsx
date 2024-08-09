@@ -1,4 +1,4 @@
-import './Entry.css'
+import './css/Entry.css'
 
 
 function Entry() {

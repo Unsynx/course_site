@@ -1,4 +1,4 @@
-import './App.css'
+import './css/App.css'
 import CourseSection from './CourseSection'
 import Hero from './Hero'
 import UserHeader from './UserHeader'
