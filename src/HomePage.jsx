@@ -9,14 +9,14 @@ function add_courses() {
 
   data.courses.forEach(course => {
     result.push(
-      <CourseCard courseName={course.info.name} courseAuthor={course.info.author} sections={course.sections} />
+      <CourseCard courseName={course.name} courseAuthor={course.author} sections={course.sections} />
     )
   })
 
   return result
 }
 
-function Home() {
+function HomePage() {
   return (
     <>
       <Hero></Hero>
@@ -30,4 +30,4 @@ function Home() {
   )
 }
 
-export default Home
+export default HomePage

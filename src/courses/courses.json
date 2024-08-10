@@ -1,11 +1,8 @@
 {
     "courses": [
         {
-            "info": {
-                "name": "temp",
-                "author": "Nik"
-            },
-        
+            "name": "temp",
+            "author": "Nik",
             "sections": [
                 {
                     "name": "Intro",

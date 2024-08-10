@@ -1,9 +1,37 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './css/App.css'
-import Home from './Home'
-import Course from './Course'
+import HomePage from './HomePage'
+import CoursePage from './CoursePage'
 import UserHeader from './components/UserHeader'
-import Lesson from './Lesson'
+import LessonPage from './LessonPage'
+import data from './courses/courses.json'
+
+// Reads from courses.json to make all course pages
+function setupPages() {
+  let result = [];
+
+  data.courses.forEach(course => {
+    let course_path = "/course_" + course.name.replace(/\s+/g, '_');
+
+    result.push(
+      <Route path={course_path} element={<CoursePage course={course}/>} />
+    )
+
+    course.sections.forEach(section => {
+      section.lessons.forEach(lesson => {
+        let lesson_path = course_path.concat("/", lesson.name.replace(/\s+/g, '_'));
+
+        result.push(
+          <Route path={lesson_path} element={<LessonPage lesson={lesson}/>} />
+        )
+      })
+    })
+  })
+
+console.log(result)
+
+  return result
+}
 
 function App() {
   return (
@@ -12,9 +40,8 @@ function App() {
         <UserHeader />
 
           <Routes>
-            <Route path='/' element={<Home />}></Route>
-            <Route path='/course' Component={Course}></Route>
-            <Route path='/lesson' Component={Lesson}></Route>
+            <Route path='/' element={<HomePage />}></Route>
+            {setupPages()}
           </Routes>
       </Router>
     </>

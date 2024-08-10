@@ -2,6 +2,7 @@ import './css/App.css'
 import CourseSection from './components/CourseSection'
 import Hero from './components/Hero'
 import { useLocation } from 'react-router-dom';
+import data from './courses/courses.json'
 
 function add_sections(sections) {
   let result = [];
@@ -15,19 +16,16 @@ function add_sections(sections) {
   return result
 }
 
-function Course() {
-  const location = useLocation()
-  const { sections } = location.state;
-
+function CoursePage({ course }) {
   return (
     <>
       <Hero></Hero>
       <div className='content'>
-        {add_sections(sections)}
+        {add_sections(course.sections)}
       </div>
       
     </>
   )
 }
 
-export default Course
+export default CoursePage

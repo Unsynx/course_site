@@ -1,12 +1,8 @@
 import './css/Lesson.css'
 import './css/App.css'
 import Entry from './components/Entry'
-import { useLocation } from 'react-router-dom';
 
-function Lesson() {
-    const location = useLocation()
-    const { lesson } = location.state;
-
+function LessonPage({ lesson }) {
   return (
     <>
         <div className='video'>
@@ -41,4 +37,4 @@ function Lesson() {
   )
 }
 
-export default Lesson
+export default LessonPage
