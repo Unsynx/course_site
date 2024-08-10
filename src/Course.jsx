@@ -1,25 +1,29 @@
 import './css/App.css'
 import CourseSection from './CourseSection'
 import Hero from './Hero'
-import UserHeader from './UserHeader'
+import { useLocation } from 'react-router-dom';
 
-function Course() {
+function add_sections(sections) {
+  let result = [];
+
+  sections.forEach(section => {
+    result.push(
+      <CourseSection name={section.name} lessons={section.lessons} />
+    )
+  })
+
+  return result
+}
+
+function Course(props) {
+  const location = useLocation()
+  const { sections } = location.state;
+
   return (
     <>
       <Hero></Hero>
       <div className='content'>
-        <CourseSection></CourseSection>
-        <CourseSection></CourseSection>
-        <CourseSection></CourseSection>
-        <CourseSection></CourseSection>
-        <CourseSection></CourseSection>
-        <CourseSection></CourseSection>
-        <CourseSection></CourseSection>
-        <CourseSection></CourseSection>
-        <CourseSection></CourseSection>
-        <CourseSection></CourseSection>
-        <CourseSection></CourseSection>
-        
+        {add_sections(sections)}
       </div>
       
     </>

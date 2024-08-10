@@ -1,12 +1,12 @@
 import './css/Entry.css'
 
 
-function Entry() {
+function Entry({ lesson }) {
   return (
     <>
         <div className='entry'>
             <div className='title'>
-                <h3>Title</h3>
+                <h3>{lesson.name}</h3>
             </div>
             <div className='course_buttons'>
                 <button className='course_button'>Start</button>

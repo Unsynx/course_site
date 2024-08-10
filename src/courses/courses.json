@@ -8,36 +8,36 @@
         
             "sections": [
                 {
-                    "section_name": "Intro",
+                    "name": "Intro",
                     "lessons": [
                         {
-                            "lesson_name": "lesson 1",
-                            "video_link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
+                            "name": "lesson 1",
+                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
                             "description": "This is the description of the lesson"
                         },
                         {
-                            "lesson_name": "lesson 2",
-                            "video_link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
+                            "name": "lesson 2",
+                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
                             "description": "This is the description of the lesson"
                         },
                         {
-                            "lesson_name": "lesson 3",
-                            "video_link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
+                            "name": "lesson 3",
+                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
                             "description": "This is the description of the lesson"
                         }
                     ]
                 },
                 {
-                    "section_name": "Continued",
+                    "name": "Continued",
                     "lessons": [
                         {
-                            "lesson_name": "lesson 1",
-                            "video_link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
+                            "name": "lesson 1",
+                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
                             "description": "This is the description of the lesson"
                         },
                         {
-                            "lesson_name": "lesson 2",
-                            "video_link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
+                            "name": "lesson 2",
+                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
                             "description": "This is the description of the lesson"
                         }
                     ]
