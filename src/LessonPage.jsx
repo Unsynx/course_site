@@ -1,6 +1,6 @@
 import './css/Lesson.css'
 import './css/App.css'
-import Entry from './components/Entry'
+import LessonEntry from './components/LessonEntry'
 
 function LessonPage({ lesson }) {
   return (

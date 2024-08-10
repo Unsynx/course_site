@@ -5,30 +5,27 @@ import CoursePage from './CoursePage'
 import UserHeader from './components/UserHeader'
 import LessonPage from './LessonPage'
 import data from './courses/courses.json'
+import getPagePath from "./util.js"
 
 // Reads from courses.json to make all course pages
 function setupPages() {
   let result = [];
 
   data.courses.forEach(course => {
-    let course_path = "/course_" + course.name.replace(/\s+/g, '_');
-
     result.push(
-      <Route path={course_path} element={<CoursePage course={course}/>} />
+      <Route path={getPagePath(course.name)} element={<CoursePage course={course}/>} />
     )
 
     course.sections.forEach(section => {
       section.lessons.forEach(lesson => {
-        let lesson_path = course_path.concat("/", lesson.name.replace(/\s+/g, '_'));
-
         result.push(
-          <Route path={lesson_path} element={<LessonPage lesson={lesson}/>} />
+          <Route path={getPagePath(course.name, lesson.name)} element={<LessonPage lesson={lesson}/>} />
         )
       })
     })
   })
 
-console.log(result)
+  console.log(result)
 
   return result
 }

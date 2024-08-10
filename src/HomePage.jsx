@@ -9,7 +9,7 @@ function add_courses() {
 
   data.courses.forEach(course => {
     result.push(
-      <CourseCard courseName={course.name} courseAuthor={course.author} sections={course.sections} />
+      <CourseCard course={course} />
     )
   })
 

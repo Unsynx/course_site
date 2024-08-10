@@ -1,14 +1,15 @@
 import './css/CourseCard.css'
 import { Link } from 'react-router-dom';
+import getPagePath from "../util.js"
 
 
-function CourseCard({courseName, courseAuthor, sections}) {
+function CourseCard({ course }) {
   return (
     <>
       <div className='course_card'>
-        <h2>{courseName}</h2>
-        <p>{courseAuthor}</p>
-        <Link to='/course' state={{ sections: sections }}>go to course</Link>
+        <h2>{course.name}</h2>
+        <p>{course.author}</p>
+        <Link to={getPagePath(course.name)} >go to course</Link>
       </div>
     </>
   )

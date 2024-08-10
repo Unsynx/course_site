@@ -1,15 +1,13 @@
 import './css/App.css'
 import CourseSection from './components/CourseSection'
 import Hero from './components/Hero'
-import { useLocation } from 'react-router-dom';
-import data from './courses/courses.json'
 
-function add_sections(sections) {
+function add_sections(course) {
   let result = [];
 
-  sections.forEach(section => {
+  course.sections.forEach(section => {
     result.push(
-      <CourseSection name={section.name} lessons={section.lessons} />
+      <CourseSection course_name={course.name} section={section} />
     )
   })
 
@@ -21,7 +19,7 @@ function CoursePage({ course }) {
     <>
       <Hero></Hero>
       <div className='content'>
-        {add_sections(course.sections)}
+        {add_sections(course)}
       </div>
       
     </>
