@@ -1,7 +1,7 @@
-import CourseCard from './CourseCard'
+import CourseCard from './components/CourseCard'
 import './css/App.css'
 import './css/Home.css'
-import Hero from './Hero'
+import Hero from './components/Hero'
 import data from './courses/courses.json'
 
 function add_courses() {

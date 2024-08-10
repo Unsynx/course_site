@@ -1,6 +1,6 @@
 import './css/App.css'
-import CourseSection from './CourseSection'
-import Hero from './Hero'
+import CourseSection from './components/CourseSection'
+import Hero from './components/Hero'
 import { useLocation } from 'react-router-dom';
 
 function add_sections(sections) {

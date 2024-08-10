@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './css/App.css'
 import Home from './Home'
 import Course from './Course'
-import UserHeader from './UserHeader'
+import UserHeader from './components/UserHeader'
 import Lesson from './Lesson'
 
 function App() {

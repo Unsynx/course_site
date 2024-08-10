@@ -1,6 +1,6 @@
 import './css/Lesson.css'
 import './css/App.css'
-import Entry from './Entry'
+import Entry from './components/Entry'
 import { useLocation } from 'react-router-dom';
 
 function Lesson() {
