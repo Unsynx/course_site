@@ -28,14 +28,14 @@
                     "name": "Continued",
                     "lessons": [
                         {
-                            "name": "lesson 1",
+                            "name": "lesson 4",
                             "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
                             "description": "This is the description of the lesson"
                         },
                         {
-                            "name": "lesson 2",
+                            "name": "lesson 5",
                             "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": "This is the description of the lesson"
+                            "description": "IS this the same link"
                         }
                     ]
                 }

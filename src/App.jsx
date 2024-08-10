@@ -19,13 +19,11 @@ function setupPages() {
     course.sections.forEach(section => {
       section.lessons.forEach(lesson => {
         result.push(
-          <Route path={getPagePath(course.name, lesson.name)} element={<LessonPage lesson={lesson}/>} />
+          <Route path={getPagePath(course.name, lesson.name)} element={<LessonPage lesson={lesson} course={course}/>} />
         )
       })
     })
   })
-
-  console.log(result)
 
   return result
 }

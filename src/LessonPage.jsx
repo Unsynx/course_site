@@ -1,9 +1,10 @@
 import './css/Lesson.css'
 import './css/App.css'
-import LessonEntry from './components/LessonEntry'
+import { Link } from 'react-router-dom'
+import { getNextLessonPath, getPreviousLessonPath } from './util'
 
-function LessonPage({ lesson }) {
-  return (
+function LessonPage({ lesson, course }) {
+    return (
     <>
         <div className='video'>
             <iframe src={lesson.link}
@@ -17,8 +18,8 @@ function LessonPage({ lesson }) {
                     <h1>{lesson.name}</h1>
                 </div>
                 <div className='lesson_buttons'>
-                    <button>Previous</button>
-                    <button>Next</button>
+                    <Link to={getPreviousLessonPath(course, lesson.name)}>Previous</Link>
+                    <Link to={getNextLessonPath(course, lesson.name)}>Next</Link>
                 </div>
             </div>
 

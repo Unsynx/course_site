@@ -36,7 +36,7 @@ function CourseSection({ course_name, section }) {
     <>
         <div className='course_section'>
             <div className='title_column'>
-                <h2 className='course_title'>{course_name}</h2>
+                <h2 className='course_title'>{section.name}</h2>
             </div>
             <div className='course_entries'>
                 {add_lessons(course_name, section)}
