@@ -1,4 +1,5 @@
 import './css/Entry.css'
+import { Link } from 'react-router-dom';
 
 
 function Entry({ lesson }) {
@@ -9,7 +10,7 @@ function Entry({ lesson }) {
                 <h3>{lesson.name}</h3>
             </div>
             <div className='course_buttons'>
-                <button className='course_button'>Start</button>
+              <Link to='/lesson' state={{ lesson: lesson }}>Start</Link>
             </div>
         </div>
     </>

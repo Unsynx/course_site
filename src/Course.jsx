@@ -15,7 +15,7 @@ function add_sections(sections) {
   return result
 }
 
-function Course(props) {
+function Course() {
   const location = useLocation()
   const { sections } = location.state;
 

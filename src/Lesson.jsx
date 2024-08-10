@@ -1,12 +1,16 @@
 import './css/Lesson.css'
 import './css/App.css'
 import Entry from './Entry'
+import { useLocation } from 'react-router-dom';
 
-function Lesson({ lessonName }) {
+function Lesson() {
+    const location = useLocation()
+    const { lesson } = location.state;
+
   return (
     <>
         <div className='video'>
-            <iframe src="https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F"
+            <iframe src={lesson.link}
                 frameborder="0" allowfullscreen 
                 width="100%" height="1080"/>
         </div>
@@ -14,7 +18,7 @@ function Lesson({ lessonName }) {
         <div className='content'>
             <div className='big_row'>
                 <div className='lesson_name'> 
-                    <h1>{lessonName}</h1>
+                    <h1>{lesson.name}</h1>
                 </div>
                 <div className='lesson_buttons'>
                     <button>Previous</button>
@@ -24,13 +28,10 @@ function Lesson({ lessonName }) {
 
             <div className='lesson_info'>
                 <div>
-                    <p>This is the info section</p>
+                    <p>{lesson.description}</p>
                 </div>
                 <div className='lesson_list'>
-                    <Entry />
-                    <Entry />
-                    <Entry />
-                    <Entry />
+                    /* Missing entires */
                 </div>
             </div>
            
