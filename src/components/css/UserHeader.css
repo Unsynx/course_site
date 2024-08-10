@@ -24,3 +24,10 @@
 .logo {
     margin: 0.5em;
 }
+
+.logo > img {
+    width: auto;
+    height: 100%;
+
+    margin: 0;
+}

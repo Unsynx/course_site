@@ -5,11 +5,11 @@ function UserHeader() {
   return (
     <>
     <div className='header'>
-      <img src='src\assets\Logo.svg' className='logo'/>
+      <Link to="/" className='logo'>
+        <img src='src\assets\Logo.svg' className='logo'/>
+      </Link>
       <nav>
-      <button><Link to="/">Home</Link></button>
-      <button><Link to="/course_temp">course</Link></button>
-      <button><Link to="/course_temp/lesson_1">lesson</Link></button>
+        <button><Link to="/">Home</Link></button>
       </nav>
     </div>
     </>
