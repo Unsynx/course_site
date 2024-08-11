@@ -1,10 +1,10 @@
 import './css/Hero.css'
 
-function Hero() {
+function Hero({ text }) {
   return (
     <>
       <div className='hero_img'>
-        <h1>Course Title</h1>
+        <h1>{text}</h1>
         <img src='src\assets\hero.jpg' className='back'></img>
       </div>
     </>

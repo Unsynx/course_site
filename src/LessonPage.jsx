@@ -11,18 +11,16 @@ function LessonPage({ lesson, course }) {
                 frameborder="0" allowfullscreen 
                 width="100%" height="1080"/>
         </div>
-
-        <div className='content'>
-            <div className='big_row'>
-                <div className='lesson_name'> 
-                    <h1>{lesson.name}</h1>
-                </div>
+        <div className='title_head'>
+            <div className='content big_row'>
+                <h1 className='lesson_title'>{lesson.name}</h1>
                 <div className='lesson_buttons'>
-                    <Link to={getPreviousLessonPath(course, lesson.name)}>Previous</Link>
-                    <Link to={getNextLessonPath(course, lesson.name)}>Next</Link>
+                    <Link to={getPreviousLessonPath(course, lesson.name)} className='prev lesson_button'><h4>Previous</h4></Link>
+                    <Link to={getNextLessonPath(course, lesson.name)} className='next lesson_button'><h4>Next</h4></Link>
                 </div>
             </div>
-
+        </div>
+        <div className='content'>
             <div className='lesson_info'>
                 <div>
                     <p>{lesson.description}</p>

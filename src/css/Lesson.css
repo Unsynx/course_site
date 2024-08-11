@@ -3,14 +3,45 @@
     max-height: 56.25vw;
 }
 
+.video {
+    background-color: black;
+}
+
 .big_row {
     display: flex;
     justify-content: space-between;
 
-    background-color: rebeccapurple;
+    color: white;
 }
 
 .lesson_info {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.lesson_title {
+    margin-left: 1em;
+}
+
+.title_head {
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    height: fit-content;
+}
+
+.lesson_buttons {
+    display: flex;
+    align-content: center;
+}
+
+.lesson_button {
+    margin: 0.5em;
+    width: 10em;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: auto;
 }

@@ -17,7 +17,7 @@ function add_sections(course) {
 function CoursePage({ course }) {
   return (
     <>
-      <Hero></Hero>
+      <Hero text={course.name}/>
       <div className='content'>
         {add_sections(course)}
       </div>

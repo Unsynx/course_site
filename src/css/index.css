@@ -8,7 +8,11 @@ p {
 
 @font-face {
     font-family: 'HelveticaNeueExtended';
-    src: url(..\assets\fonts\HelveticaNeueLTW1GBlkEx.otf);
+    src: url('../assets/fonts/HelveticaNeueLTW1G-BlkEx.woff2') format('woff2'),
+        url('../assets/fonts/HelveticaNeueLTW1G-BlkEx.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 h1, h2, h3, h4 {
