@@ -22,7 +22,8 @@ function HomePage() {
       <Hero></Hero>
       <div className='content'>
         <div id='course_container' className='courses'>
-          {add_courses()}
+        {add_courses()}
+
         </div>
       </div>
       

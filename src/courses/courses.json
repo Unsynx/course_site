@@ -3,6 +3,8 @@
         {
             "name": "temp",
             "author": "Nik",
+            "level": "easy",
+            "short_description": "this is a sample course that can be used as an example",
             "sections": [
                 {
                     "name": "Intro",
