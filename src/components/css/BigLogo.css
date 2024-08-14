@@ -9,20 +9,32 @@
 }
 
 .big_logo {
-    max-width: 50%;
+    /* set logo size here*/
+    width: 750px;
+    position: relative;
 }
 
 .big_logo > img {
-    position: absolute;
     object-fit: cover;
 }
 
 .big_logo_back {
-    position: relative;
     animation-name: circle_fill;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.big_logo_front {
+    z-index: 1;
+    position: relative;
 }
 
 @keyframes circle_fill {

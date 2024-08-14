@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './css/BigLogo.css'
+import { useEffect } from 'react'
 
 
 function BigLogo() {
@@ -20,7 +21,9 @@ function BigLogo() {
           <img src='src\assets\logo_fill_red.svg' 
           className='big_logo_back logo_red'
           />
-          <img src='src\assets\logo_outline.svg'/>
+          <img src='src\assets\logo_outline.svg'
+          className='big_logo_front'
+          />
         </div>
       </div>
       <div className='hero_right'>
