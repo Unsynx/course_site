@@ -2,10 +2,6 @@ body {
     margin: 0;
 }
 
-p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 @font-face {
     font-family: 'HelveticaNeueExtended';
     src: url('../assets/fonts/HelveticaNeueLTW1G-BlkEx.woff2') format('woff2'),
@@ -15,6 +11,17 @@ p {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Light.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+
 h1, h2, h3, h4 {
     font-family: 'HelveticaNeueExtended';
+}
+
+p {
+    font-family: 'Poppins', Arial,sans-serif;
 }
