@@ -58,3 +58,51 @@
     width: 2em;
     height: auto;
 }
+
+@keyframes plus_hover {
+    from {transform: rotate(0);}
+    to {transform: rotate(-45deg);}
+}
+
+@keyframes plus_unhover {
+    from {transform: rotate(-45deg);}
+    to {transform: rotate(0);}
+}
+
+.course_card:hover .plus {
+    animation: plus_hover 0.1s forwards ease-in-out;
+}
+
+.plus {
+    animation: plus_unhover 0.1s ease-in-out;
+}
+
+@keyframes card_hover {
+    from {
+        transform: translate(0px);
+        box-shadow: 0px 0px rgb(230 230 230);
+    }
+    to {
+        transform: translate(15px, -15px);
+        box-shadow: -15px 15px rgb(230 230 230);
+    }
+}
+
+@keyframes card_unhover {
+    to {
+        transform: translate(0px);
+        box-shadow: 0px 0px rgb(230 230 230);
+    }
+    from {
+        transform: translate(15px, -15px);
+        box-shadow: -15px 15px rgb(230 230 230);
+    }
+}
+
+.course_card:hover {
+    animation: card_hover 0.1s forwards ease-in-out;
+}
+
+.course_card {
+    animation: card_unhover 0.1s ease-in-out;
+}
