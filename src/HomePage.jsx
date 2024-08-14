@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import data from './courses/courses.json'
 import DynamicBackground from './components/DynamicBackground'
 import CourseScroller from './components/CourseScroller'
-import BigLogo from './components/BigLogo'
+import HomeHero from './components/HomeHero'
 
 function add_courses() {
   let result = [];
@@ -23,8 +23,9 @@ function HomePage() {
   return (
     <>
       <DynamicBackground />
+      <HomeHero />
       <div className='content'>
-        <BigLogo />
+        
         <CourseScroller />
         <div id='course_container' className='courses'>
           

@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
-import './css/BigLogo.css'
-import { useEffect } from 'react'
+import './css/HomeHero.css'
 
 
-function BigLogo() {
+function HomeHero() {
   return (
     <>
     <div className='hero_container'>
@@ -27,14 +26,18 @@ function BigLogo() {
         </div>
       </div>
       <div className='hero_right'>
-        <p>This is a sae pitch</p>
-        <Link>This is a button</Link>
+        <p>Learn how to make stuff</p>
+        <Link className='hero_button'>
+          <h2>Let's Go!</h2>
+        </Link>
       </div>
 
     </div>
-        
+    <div className='hero_end'>
+      <img src='src\assets\semi-circle.svg' />
+    </div>
     </>
   )
 }
 
-export default BigLogo
+export default HomeHero

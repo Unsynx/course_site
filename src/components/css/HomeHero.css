@@ -1,16 +1,34 @@
 .hero_container {
-    margin: 1em;
     position: relative;
+    padding-top: 10em;
+    padding-bottom: 10em;
 
-    height: 750px;
     width: 100%;
 
     display: flex;
+
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.hero_right {
+    flex-grow: 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_left {
+    flex-grow: 2;
+    padding-left: 10em;
+    padding-right: 10em;
 }
 
 .big_logo {
     /* set logo size here*/
-    width: 750px;
+    min-width: 500px;
     position: relative;
 }
 
@@ -58,3 +76,24 @@
     animation-delay: 0.5s;
 }
 
+.hero_end {
+    width: 100%;
+    height: 20px;
+}
+
+.hero_end > img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.hero_button {
+    background-color: rgb(122, 201, 67);
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    max-width: 30em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
