@@ -2,7 +2,7 @@ import './css/DynamicBackground.css'
 import { useState, useEffect } from 'react'
 
 //https://medium.com/@samantha.n.cabrera/parallax-effect-in-react-step-by-step-e6ed68cb4e5e
-const DynamicBackground = () => {
+const DynamicBackground = ({ height_vh }) => {
     const [scrollY, setScrollY] = useState(0);
 
     useEffect(() => {
@@ -18,7 +18,7 @@ const DynamicBackground = () => {
     return (
         <div 
             className="backdrop" 
-            style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+            style={{ transform: `translateY(${scrollY * 0.5}px)`, height: `${height_vh}vh` }}
         />
     );
 };

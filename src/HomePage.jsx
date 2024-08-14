@@ -5,6 +5,7 @@ import data from './courses/courses.json'
 import DynamicBackground from './components/DynamicBackground'
 import CourseScroller from './components/CourseScroller'
 import HomeHero from './components/HomeHero'
+import Footer from './components/Footer'
 
 function add_courses() {
   let result = [];
@@ -21,17 +22,21 @@ function add_courses() {
 function HomePage() {
   return (
     <>
-      <DynamicBackground />
+      <DynamicBackground height_vh={160}/>
       <HomeHero />
       <div className='content'>
-        
-        <CourseScroller />
-        <CourseScroller />
-        <CourseScroller />
+        <div className='writting'>
+          <p>Hi 👋—</p>
+          <p>Welcome to Nik's Maker Guide.</p>
+          <p>Want to learn how to make 🔨 all sorts of cool stuff, but don't know where to start 🤔</p>
+          <p>Then you're in the right place!</p>
+        </div>
 
-
+        <CourseScroller />
+        <CourseScroller />
+        <CourseScroller />
       </div>
-      
+    <Footer />
     </>
   )
 }
