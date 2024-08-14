@@ -1,0 +1,48 @@
+.hero_container {
+    margin: 1em;
+    position: relative;
+
+    height: 750px;
+    width: 100%;
+
+    display: flex;
+}
+
+.big_logo {
+    max-width: 50%;
+}
+
+.big_logo > img {
+    position: absolute;
+    object-fit: cover;
+}
+
+.big_logo_back {
+    position: relative;
+    animation-name: circle_fill;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+@keyframes circle_fill {
+    0% {clip-path: circle(120% at 0% 50%);}
+    100% {clip-path: circle(0% at 0% 50%);}
+}
+
+.logo_white {
+    animation-name: none;
+}
+
+.logo_red {
+    animation-delay: 0s;
+}
+
+.logo_green {
+    animation-delay: 0.25s;
+}
+
+.logo_blue {
+    animation-delay: 0.5s;
+}
+
