@@ -6,6 +6,7 @@ import UserHeader from './components/UserHeader'
 import LessonPage from './LessonPage'
 import data from './courses/courses.json'
 import getPagePath from "./util.js"
+import SearchPage from './SearchPage.jsx'
 
 // Reads from courses.json to make all course pages
 function setupPages() {
@@ -36,6 +37,7 @@ function App() {
 
           <Routes>
             <Route path='/' element={<HomePage />}></Route>
+            <Route path='/search' element={<SearchPage />}></Route>
             {setupPages()}
           </Routes>
       </Router>

@@ -58,3 +58,11 @@ export function getCourseListFromTag(tag) {
     })
     return result
 }
+
+export function getCourseList() {
+    let result = [];
+    data.courses.forEach(course => {
+        result.push(course)
+    })
+    return result
+}
