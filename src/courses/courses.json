@@ -1,70 +1,104 @@
 {
     "courses": [
         {
-            "name": "temp",
+            "name": "equip #0",
             "author": "Nik",
             "level": "easy",
             "description": "this is a sample course",
-            "sections": [
-                {
-                    "name": "Section 1",
-                    "lessons": [
-                        {
-                            "name": "Lesson 0",
-                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": ""
-                        },
-                        {
-                            "name": "Lesson 1",
-                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": ""
-                        },
-                        {
-                            "name": "Lesson 2",
-                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": ""
-                        },
-                        {
-                            "name": "Lesson 3",
-                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": ""
-                        },
-                        {
-                            "name": "Lesson 4",
-                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": ""
-                        }
-                    ]
-                }
-            ]
+            "tags": [
+                "equipment"
+            ],
+            "sections": []
         },
         {
-            "name": "contiuned",
+            "name": "equip #1",
             "author": "Nik",
-            "level": "hard",
+            "level": "easy",
             "description": "this is a sample course",
-            "sections": [
-                {
-                    "name": "Section 1",
-                    "lessons": [
-                        {
-                            "name": "Lesson 0",
-                            "link": "",
-                            "description": ""
-                        },
-                        {
-                            "name": "Lesson 1",
-                            "link": "",
-                            "description": ""
-                        },
-                        {
-                            "name": "Lesson 2",
-                            "link": "",
-                            "description": ""
-                        }
-                    ]
-                }
-            ]
+            "tags": [
+                "equipment"
+            ],
+            "sections": []
+        },
+        {
+            "name": "equip #2",
+            "author": "Nik",
+            "level": "easy",
+            "description": "this is a sample course",
+            "tags": [
+                "equipment"
+            ],
+            "sections": []
+        },
+        {
+            "name": "equip #3",
+            "author": "Nik",
+            "level": "easy",
+            "description": "this is a sample course",
+            "tags": [
+                "equipment"
+            ],
+            "sections": []
+        },
+        {
+            "name": "equip #4",
+            "author": "Nik",
+            "level": "easy",
+            "description": "this is a sample course",
+            "tags": [
+                "equipment"
+            ],
+            "sections": []
+        },
+        {
+            "name": "skill #0",
+            "author": "Nik",
+            "level": "easy",
+            "description": "this is a sample course",
+            "tags": [
+                "skill"
+            ],
+            "sections": []
+        },
+        {
+            "name": "skill #1",
+            "author": "Nik",
+            "level": "easy",
+            "description": "this is a sample course",
+            "tags": [
+                "skill"
+            ],
+            "sections": []
+        },
+        {
+            "name": "project #0",
+            "author": "Nik",
+            "level": "easy",
+            "description": "this is a sample course",
+            "tags": [
+                "project"
+            ],
+            "sections": []
+        },
+        {
+            "name": "project #1",
+            "author": "Nik",
+            "level": "easy",
+            "description": "this is a sample course",
+            "tags": [
+                "project"
+            ],
+            "sections": []
+        },
+        {
+            "name": "project #2",
+            "author": "Nik",
+            "level": "easy",
+            "description": "this is a sample course",
+            "tags": [
+                "project"
+            ],
+            "sections": []
         }
     ]
 }

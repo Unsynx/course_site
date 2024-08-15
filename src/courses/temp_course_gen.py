@@ -1,5 +1,10 @@
 import json
 
+class Tags:
+    EQUIPMENT = "equipment"
+    SKILL = "skill"
+    PROJECT = "project"    
+
 class CourseList:
     def __init__(self) -> None:
         self.courses = []
@@ -20,11 +25,15 @@ class Course:
         self.author = author
         self.level = level
         self.description = description
+        self.tags = []
 
         self.sections = []
 
     def addSection(self, section):
         self.sections.append(section)
+
+    def addTag(self, tag):
+        self.tags.append(tag)
 
     def addLessonToLastSection(self, lesson):
         self.sections[len(self.sections) - 1].addLesson(lesson)
@@ -63,17 +72,21 @@ def listOfObjToDicts(list):
 
 courseList = CourseList()
 
-course = Course("temp", "Nik", "easy", "this is a sample course")
-course.addSection(Section("Section 1"))
-for i in range(5):
-    course.addLessonToLastSection(Lesson(f"Lesson {i}", "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F", ""))
-courseList.addCourse(course)
 
-course = Course("contiuned", "Nik", "hard", "this is a sample course")
-course.addSection(Section("Section 1"))
+for i in range(5):
+    course = Course(f"equip #{i}", "Nik", "easy", "this is a sample course")
+    course.addTag(Tags.EQUIPMENT)
+    courseList.addCourse(course)
+
+for i in range(2):
+    course = Course(f"skill #{i}", "Nik", "easy", "this is a sample course")
+    course.addTag(Tags.SKILL)
+    courseList.addCourse(course)
+
 for i in range(3):
-    course.addLessonToLastSection(Lesson(f"Lesson {i}", "", ""))
-courseList.addCourse(course)
+    course = Course(f"project #{i}", "Nik", "easy", "this is a sample course")
+    course.addTag(Tags.PROJECT)
+    courseList.addCourse(course)
 
 courseList.toJson("courses.json")
     

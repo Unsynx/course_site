@@ -34,9 +34,9 @@ function HomePage() {
           <p>Here you can:</p>
         </div>
 
-        <CourseScroller header={'Learn to Use Equipment'} />
-        <CourseScroller header={'Learn Design Skills'} />
-        <CourseScroller header={'Make Projects that Push Your Skills'} />
+        <CourseScroller header={'Learn to Use Equipment'} tag={'equipment'} />
+        <CourseScroller header={'Learn Design Skills'} tag={'skill'}/>
+        <CourseScroller header={'Make Projects that Push Your Skills'} tag={'project'}/>
       </div>
     <Footer />
     </>

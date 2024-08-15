@@ -1,3 +1,5 @@
+import data from './courses/courses.json'
+
 function formatPath(name) {
     return name.replace(/\s+/g, '_')
 }
@@ -47,4 +49,12 @@ export function getNextLessonPath(course, current_lesson_name) {
 
 export function getPreviousLessonPath(course, current_lesson_name) {
     return getLessonPathOffset(course, current_lesson_name, -1)
+}
+
+export function getCourseListFromTag(tag) {
+    let result = [];
+    data.courses.forEach(course => {
+        if (course.tags.includes(tag)) { result.push(course) }
+    })
+    return result
 }

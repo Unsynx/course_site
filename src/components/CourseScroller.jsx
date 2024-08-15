@@ -1,10 +1,21 @@
 import CourseCard from './CourseCard'
 import './css/CourseScroller.css'
-import data from '../courses/courses.json'
 import { Link } from 'react-router-dom';
+import { getCourseListFromTag } from '../util';
 
+function getCards(count, tag) {
+  let courses = getCourseListFromTag(tag)
 
-function CourseScroller({ header }) {
+  let result = [];
+  for (let i = 0; i < Math.min(count, courses.length); i++) {
+    result.push(
+      <CourseCard course={courses[i]} />
+    )
+  }
+  return result
+}
+
+function CourseScroller({ header, tag }) {
   return (
     <>
       <div className='course_scroller_header'>
@@ -15,10 +26,7 @@ function CourseScroller({ header }) {
         </Link>
       </div>
       <div id='course_container' className='courses'>
-        <CourseCard course={data.courses[0]} />
-        <CourseCard course={data.courses[0]} />
-        <CourseCard course={data.courses[0]} />
-        <CourseCard course={data.courses[0]} />
+        {getCards(4, tag)}
       </div>
     </>
   )
