@@ -8,22 +8,16 @@
     display: flex;
 
     background-color: rgb(230, 230, 230);
+    justify-content: center;
     
 }
 
 .hero_right {
-    flex-grow: 4;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.hero_left {
-    flex-grow: 2;
-    padding-left: 10em;
-    padding-right: 10em;
+    margin: 3em;
 }
 
 .big_logo {

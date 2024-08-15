@@ -30,11 +30,13 @@ function HomePage() {
           <p>Welcome to Nik's Maker Guide.</p>
           <p>Want to learn how to make 🔨 all sorts of cool stuff, but don't know where to start 🤔</p>
           <p>Then you're in the right place!</p>
+          <br />
+          <p>Here you can:</p>
         </div>
 
-        <CourseScroller />
-        <CourseScroller />
-        <CourseScroller />
+        <CourseScroller header={'Learn to Use Equipment'} />
+        <CourseScroller header={'Learn Design Skills'} />
+        <CourseScroller header={'Make Projects that Push Your Skills'} />
       </div>
     <Footer />
     </>

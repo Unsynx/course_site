@@ -4,19 +4,22 @@ import data from '../courses/courses.json'
 import { Link } from 'react-router-dom';
 
 
-function CourseScroller() {
+function CourseScroller({ header }) {
   return (
     <>
-        <h1>Courses</h1>
-        <div id='course_container' className='courses'>
-          <CourseCard course={data.courses[0]} />
-          <CourseCard course={data.courses[0]} />
-          <CourseCard course={data.courses[0]} />
-          <CourseCard course={data.courses[0]} />
-        </div>
-        <Link to=''>
+      <div className='course_scroller_header'>
+        <h1>{header}</h1>
+        <hr className='line_fill'/>
+        <Link to='' className='search_link'>
           <h3>{'see more ->'}</h3>
         </Link>
+      </div>
+      <div id='course_container' className='courses'>
+        <CourseCard course={data.courses[0]} />
+        <CourseCard course={data.courses[0]} />
+        <CourseCard course={data.courses[0]} />
+        <CourseCard course={data.courses[0]} />
+      </div>
     </>
   )
 }
