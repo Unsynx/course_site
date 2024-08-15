@@ -4,45 +4,67 @@
             "name": "temp",
             "author": "Nik",
             "level": "easy",
-            "short_description": "this is a sample course that can be used as an example",
+            "description": "this is a sample course",
             "sections": [
                 {
-                    "name": "Intro",
+                    "name": "Section 1",
                     "lessons": [
                         {
-                            "name": "lesson 1",
+                            "name": "Lesson 0",
                             "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": "This is the description of the lesson"
+                            "description": ""
                         },
                         {
-                            "name": "lesson 2",
+                            "name": "Lesson 1",
                             "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": "This is the description of the lesson"
+                            "description": ""
                         },
                         {
-                            "name": "lesson 3",
+                            "name": "Lesson 2",
                             "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": "This is the description of the lesson"
+                            "description": ""
+                        },
+                        {
+                            "name": "Lesson 3",
+                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
+                            "description": ""
+                        },
+                        {
+                            "name": "Lesson 4",
+                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
+                            "description": ""
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "name": "contiuned",
+            "author": "Nik",
+            "level": "hard",
+            "description": "this is a sample course",
+            "sections": [
                 {
-                    "name": "Continued",
+                    "name": "Section 1",
                     "lessons": [
                         {
-                            "name": "lesson 4",
-                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": "This is the description of the lesson"
+                            "name": "Lesson 0",
+                            "link": "",
+                            "description": ""
                         },
                         {
-                            "name": "lesson 5",
-                            "link": "https://www.youtube.com/embed/7q_sOSFLWEY?si=RPvh25oNOVZt8V0F",
-                            "description": "IS this the same link"
+                            "name": "Lesson 1",
+                            "link": "",
+                            "description": ""
+                        },
+                        {
+                            "name": "Lesson 2",
+                            "link": "",
+                            "description": ""
                         }
                     ]
                 }
             ]
         }
     ]
-
 }
