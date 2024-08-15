@@ -22,7 +22,7 @@ function add_courses() {
 function HomePage() {
   return (
     <>
-      <DynamicBackground height_vh={160}/>
+      <DynamicBackground />
       <HomeHero />
       <div className='content'>
         <div className='writting'>

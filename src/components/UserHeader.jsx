@@ -9,7 +9,7 @@ function UserHeader() {
         <img src='src\assets\Logo.svg' className='logo'/>
       </Link>
       <nav>
-        <button><Link to="/">Home</Link></button>
+        
       </nav>
     </div>
     </>
