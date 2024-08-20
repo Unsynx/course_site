@@ -7,18 +7,6 @@ import CourseScroller from './components/CourseScroller'
 import HomeHero from './components/HomeHero'
 import Footer from './components/Footer'
 
-function add_courses() {
-  let result = [];
-
-  data.courses.forEach(course => {
-    result.push(
-      <CourseCard course={course} />
-    )
-  })
-
-  return result
-}
-
 function HomePage() {
   return (
     <>

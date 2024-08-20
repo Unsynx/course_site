@@ -74,8 +74,11 @@ courseList = CourseList()
 
 
 for i in range(5):
-    course = Course(f"equip #{i}", "Nik", "easy", "this is a sample course")
+    course = Course(f"equip {i}", "Nik", "easy", "this is a sample course")
     course.addTag(Tags.EQUIPMENT)
+    section = Section("Section 1")
+    section.addLesson(Lesson("sample", "https://www.youtube.com/embed/KSpeKBhXhwg?si=Uj3dyPYvrw1uygEs", "YAsdajssdnajsdhas"))
+    course.addSection(section)
     courseList.addCourse(course)
 
 for i in range(2):

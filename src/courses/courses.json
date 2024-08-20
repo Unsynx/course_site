@@ -1,54 +1,109 @@
 {
     "courses": [
         {
-            "name": "equip #0",
+            "name": "equip 0",
             "author": "Nik",
             "level": "easy",
             "description": "this is a sample course",
             "tags": [
                 "equipment"
             ],
-            "sections": []
+            "sections": [
+                {
+                    "name": "Section 1",
+                    "lessons": [
+                        {
+                            "name": "sample",
+                            "link": "https://www.youtube.com/embed/KSpeKBhXhwg?si=Uj3dyPYvrw1uygEs",
+                            "description": "YAsdajssdnajsdhas"
+                        }
+                    ]
+                }
+            ]
         },
         {
-            "name": "equip #1",
+            "name": "equip 1",
             "author": "Nik",
             "level": "easy",
             "description": "this is a sample course",
             "tags": [
                 "equipment"
             ],
-            "sections": []
+            "sections": [
+                {
+                    "name": "Section 1",
+                    "lessons": [
+                        {
+                            "name": "sample",
+                            "link": "https://www.youtube.com/embed/KSpeKBhXhwg?si=Uj3dyPYvrw1uygEs",
+                            "description": "YAsdajssdnajsdhas"
+                        }
+                    ]
+                }
+            ]
         },
         {
-            "name": "equip #2",
+            "name": "equip 2",
             "author": "Nik",
             "level": "easy",
             "description": "this is a sample course",
             "tags": [
                 "equipment"
             ],
-            "sections": []
+            "sections": [
+                {
+                    "name": "Section 1",
+                    "lessons": [
+                        {
+                            "name": "sample",
+                            "link": "https://www.youtube.com/embed/KSpeKBhXhwg?si=Uj3dyPYvrw1uygEs",
+                            "description": "YAsdajssdnajsdhas"
+                        }
+                    ]
+                }
+            ]
         },
         {
-            "name": "equip #3",
+            "name": "equip 3",
             "author": "Nik",
             "level": "easy",
             "description": "this is a sample course",
             "tags": [
                 "equipment"
             ],
-            "sections": []
+            "sections": [
+                {
+                    "name": "Section 1",
+                    "lessons": [
+                        {
+                            "name": "sample",
+                            "link": "https://www.youtube.com/embed/KSpeKBhXhwg?si=Uj3dyPYvrw1uygEs",
+                            "description": "YAsdajssdnajsdhas"
+                        }
+                    ]
+                }
+            ]
         },
         {
-            "name": "equip #4",
+            "name": "equip 4",
             "author": "Nik",
             "level": "easy",
             "description": "this is a sample course",
             "tags": [
                 "equipment"
             ],
-            "sections": []
+            "sections": [
+                {
+                    "name": "Section 1",
+                    "lessons": [
+                        {
+                            "name": "sample",
+                            "link": "https://www.youtube.com/embed/KSpeKBhXhwg?si=Uj3dyPYvrw1uygEs",
+                            "description": "YAsdajssdnajsdhas"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "skill #0",
